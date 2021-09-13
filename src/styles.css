@@ -1,0 +1,377 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  max-height: 10vh;
+  width: 100%;
+  justify-content: space-between;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.nav-bar {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3.813rem;
+}
+
+.nav-icons {
+  margin-left: auto;
+  margin-right: auto;
+  cursor: not-allowed;
+}
+
+#search {
+  height: 20px;
+  width: 20px;
+  margin: 1.25rem;
+}
+
+#log-in {
+  height: 24px;
+  width: 20px;
+  margin: 1.25rem;
+} 
+
+#bag {
+  height: 24px;
+  width: 20px;
+  margin: 1.25rem;
+}
+
+#logo {
+  height: 7.5rem;
+  width: auto;
+  margin-left: 6rem;
+  cursor: pointer;
+}
+
+.container-category {
+  height: 15.753vh;
+  width: auto;
+  background-color: #FFE0C3;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35vw;
+  height: 10.274vh;
+}
+
+.drop-box {
+  display: flex;
+  flex-direction: column;
+  height: 10.958vh;
+  width: 4.7095vw;
+  font-family: Muli;
+  align-items: center;
+  font-size: 2.739vh;
+  cursor: pointer;
+}
+
+#heart {
+  width: 32px;
+  height: 32px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 54.7945vh;
+  background-color: #FFF7F0;
+  justify-content: center;
+}
+
+.promotion-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 41.0958vh;
+  width: auto;
+  padding-top: 6.849vh;
+  padding-bottom: 6.849vh;
+}
+
+.promo-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF7F0 0% 0% no-repeat padding-box;
+  border: 3px solid #FF7B54;
+  opacity: 1;
+  width: 31.397vw;
+  height: 27.397vh;
+}
+
+#left-promo-img {
+  height: 41.0958vh;
+  width: 16.640vw;
+}
+
+#right-promo-img {
+  height: 41.0958vh;
+  width: 16.640vw;
+  overflow: hidden;
+}
+
+.hero-promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Muli;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  height: 12.842vh;
+  width: 18.838vw;
+  font-size: 1.7em;
+}
+
+.promo-left-square {
+  background-color: #FFE0C3;
+  opacity: 1;
+  height: 41.0958vh;
+  width: 31.397vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.promo-headline {
+  font-family: Muli;
+  font-size: 1.375em;
+  text-align: left;
+  opacity: 1;
+  width: 13.8648vw;
+  height: 9.589vh;
+}
+
+.promo-price {
+  width: 13.8648vw;
+  height: 4.7945vh;
+  text-align: left;
+  font: bold 1.375em Mulish, sans-serif;
+  font-family: Muli;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin-top: 0.3em;
+}
+
+.promo-indent {
+  padding-left: 2.0797vw;
+  padding-top: 6.8493vh;
+}
+
+.promo-right-square {
+  background-color: #FFE0C3;
+  opacity: 1;
+  height: 41.0958vh;
+  width: 31.397vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+#promo-right-headline {
+  font-family: Muli;
+  font-size: 1.375;
+}
+
+.div-headline {
+  padding-left: 2.0797vw;
+  margin-top: 7vh;
+  font: bold 1.375rem Muli;
+}
+
+.showcase-carousel {
+  height: 58.45648vh;
+  width: auto;
+  margin-left: 4.649vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.product-container {
+  height: 58.45648vh;
+  margin-top: 7vh;
+}
+
+.product-square-left {
+  height: 50.3424vh;
+  width: 23.04075vw;
+  background-color: #EFEFEF;
+}
+
+.product-square {
+  height: 50.3424vh;
+  width: 23.04075vw;
+  background-color: #EFEFEF;
+}
+
+.showcase-image {
+  padding: 3.688vh;
+  width: 240px;
+  height: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.showcase-product-name {
+  width: auto;
+  height: 20px;
+  text-align: center;
+  font: normal normal bold 16px/20px Mulish;
+  letter-spacing: 0px;
+  color: #151515;
+  opacity: 1;
+  margin-top: 3.5vh;
+  padding-top: 1vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.showcase-product-price {
+  width: auto;
+  height: 18px;
+  text-align: center;
+  font: normal normal normal 14px/20px Muli;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  padding-top: 1vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.footer {
+  display: flex;
+  height: 54.7945vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container {
+  text-align: center;
+}
+#footer-arrow {
+  cursor: pointer;
+}
+
+.footer-headline {
+  height: 18px;
+  text-align: center;
+  width: auto;
+  text-align: left;
+  font: normal normal normal 14px/20px Muli;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.department-headline {
+  margin-top: 2vh;
+  margin-left: 4.649vw;
+  width: 202px;
+  height: 15px;
+  text-align: left;
+  font: normal normal normal 12px/18px Muli;
+  letter-spacing: 0px;
+  color: #575757;
+  opacity: 1;
+}
+
+.department-hero-left {
+  height: 60.721vh;
+  width: auto;
+  display: flex;
+}
+
+#living-room {
+  padding-top: 3.554vh;
+  margin-left: 4.649vw;
+}
+
+.copywrite-title {
+  width: auto;
+  height: 7.4vh;
+  text-align: left;
+  font: normal normal bold 1.938em Muli;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin-top: 17vh;
+  margin-left: 5.4617vw;
+}
+
+.copywrite-paragraph {
+  width: 41.765vw;
+  height: 11.7647vh;
+  text-align: left;
+  font: normal normal normal 1rem Muli;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin-top: 3.036vh;
+  margin-left: 5.4617vw;
+}
+
+.showcase-rectangle {
+  height: 50.3424vh;
+  width: 47.8125vw;
+  opacity: 1;
+  padding-right: .5vw;
+  padding-left: .5vw;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 78.8177vh;
+  width: auto;
+  margin-left: 5.0427vw;
+}
+
+#office {
+  height: 78.8177vh;
+  width: 70.427vw;
+}
+
+.left-copy-div {
+  width: 27.3504vw;
+  height: 4.5977vh;
+}
+
+.left-copywrite-title {
+  text-align: left;
+  font: normal normal bold 22px/28px Muli;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.left-copywrite-paragraph {
+  text-align: left;
+  font: normal normal normal 16px/21px Muli;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}

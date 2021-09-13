@@ -1,4 +1,5 @@
 import renderHome from './home.js';
+import createNew from './new.js';
 
 // Function which adds home logic to logo
 const homeButton = () => {

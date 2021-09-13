@@ -13,7 +13,7 @@ import createNew from './new.js';
 function createNavBar() {
   // Create an element to grab the content div in index.html
   const contentDiv = document.getElementById('content');
-  // Function which contains logic to generate nav element and its contents
+  // Function to generate nav element and its contents
   const createNav = () => {
     // create elements
     const nav = document.createElement('NAV'); // nav element

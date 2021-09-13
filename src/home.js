@@ -178,7 +178,6 @@ function createDepartmentNav() {
 
 // Function which creates the main section which can be swapped between departments
 function createMain() {
-
   const contentDiv = document.getElementById('content');
 
   //IIFE for the main section
@@ -190,6 +189,61 @@ function createMain() {
   };
   contentDiv.append(createMainArea());
 }
+
+// Function which creates the footer section for the webpage
+function createFooter() {
+  const contentDiv = document.getElementById('content');
+
+  const createFooterSection = () => {
+    //Create Elements
+    const footerSection = document.createElement('section'); // Create Section
+    const footer = document.createElement('div'); // Create footer div
+    // Create additonal footer div to hold icon & text
+    const footerContainer = document.createElement('div');
+    const footerIcon = new Image(); // Create back to top icon
+    const footerHeadline = document.createElement('div'); // Create back to top text
+
+    // Set attributes, classes, and images
+    footer.classList.add('footer');
+    footerSection.appendChild(footer);
+    footerContainer.classList.add('footer-container');
+    footerIcon.src = BackToTopArrow;
+    footerIcon.setAttribute('alt', 'back-to-top-icon');
+    footerIcon.setAttribute('id', 'footer-arrow');
+    footerHeadline.classList.add('footer-headline');
+    footerHeadline.textContent = 'DE VOLTA AO TOPO';
+
+    // append to the DOM
+    content.append(footerSection);
+    footer.appendChild(footerContainer);
+    footerContainer.appendChild(footerIcon);
+    footerContainer.appendChild(footerHeadline);
+  };
+
+  createFooterSection();
+}
+
+// Function which auto scrolls from the bottom of the webpage to the top
+const scrollToTop = () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // Chrome, Firefox, IE and Opera
+};
+
+const scroll = () => {
+  const topIcon = document.getElementById('footer-arrow');
+  topIcon.addEventListener('click', scrollToTop);
+};
+
+function renderHome() {
+  createNavBar();
+  createDepartmentNav();
+  createMain();
+  createNew();
+  createFooter();
+  scroll();
+}
+
+export default renderHome;
 
 
 

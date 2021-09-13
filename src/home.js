@@ -176,6 +176,21 @@ function createDepartmentNav() {
   contentDiv.appendChild(createCategoryBar());
 }
 
+// Function which creates the main section which can be swapped between departments
+function createMain() {
+
+  const contentDiv = document.getElementById('content');
+
+  //IIFE for the main section
+  const createMainArea = () => {
+    const main = document.createElement('main');
+    main.classList.add('main');
+    main.setAttribute('id', 'main');
+    return main;
+  };
+  contentDiv.append(createMainArea());
+}
+
 
 
 

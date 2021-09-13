@@ -1,5 +1,9 @@
+import './styles.css';
 import renderHome from './home.js';
-import createNew from './new.js';
+import createNew from './new';
+import sofa from './sofa.js';
+import chair from './chairs';
+import favorite from './favorites';
 
 // Function which adds home logic to logo
 const homeButton = () => {

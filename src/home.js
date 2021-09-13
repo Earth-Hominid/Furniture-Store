@@ -223,12 +223,13 @@ function createFooter() {
   createFooterSection();
 }
 
-// Function which auto scrolls from the bottom of the webpage to the top
+// Function which assigns scrolling up logic
 const scrollToTop = () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // Chrome, Firefox, IE and Opera
 };
 
+// Function which auto scrolls from the bottom of the webpage to the top
 const scroll = () => {
   const topIcon = document.getElementById('footer-arrow');
   topIcon.addEventListener('click', scrollToTop);
@@ -244,7 +245,3 @@ function renderHome() {
 }
 
 export default renderHome;
-
-
-
-

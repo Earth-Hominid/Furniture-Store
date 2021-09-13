@@ -244,7 +244,7 @@ function createShowcase() {
 }
 
 function createNew() {
-  createHeroPromo()
-  createShowcase()
+  createHeroPromo();
+  createShowcase();
 }
 export default createNew;

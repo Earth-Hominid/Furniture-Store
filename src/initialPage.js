@@ -19,7 +19,6 @@ function createNavBar() {
   const contentDiv = document.getElementById('content');
   // Function which contains logic to generate nav element and its contents
   const createNav = () => {
-
     // create elements
     const nav = document.createElement('NAV'); // nav element
     const logo = new Image(); // logo
@@ -31,12 +30,12 @@ function createNavBar() {
     const bagDiv = document.createElement('div'); // a div to hold shopping bag icon
     const bagIcon = new Image(); // shopping bag icon
 
-    //set attributes and images
-    nav.setAttribute('id', 'nav'); 
-    logo.src = Logo; 
-    logo.setAttribute('id', 'logo'); 
-    logo.setAttribute('alt', 'Image of RedeBS logo'); 
-    navBar.classList.add('nav-bar'); 
+    //set attributes, images, and classes
+    nav.setAttribute('id', 'nav');
+    logo.src = Logo;
+    logo.setAttribute('id', 'logo');
+    logo.setAttribute('alt', 'Image of RedeBS logo');
+    navBar.classList.add('nav-bar');
     searchDiv.classList.add('search-div');
     navIcon.src = Search;
     navIcon.classList.add('nav-icons');
@@ -66,6 +65,117 @@ function createNavBar() {
   };
 
   contentDiv.append(createNav());
+}
+
+function createDepartmentNav() {
+  // Create an element to grab the content div in index.html
+  const contentDiv = document.getElementById('content');
+  // Function for creating the retail department category bar.
+  const createCategoryBar = () => {
+    // create elements
+    const container = document.createElement('div');
+    const containerList = document.createElement('div');
+
+    //set attributes & classes
+    container.classList.add('container-category');
+    containerList.classList.add('category-list');
+    containerList.setAttribute('id', 'link-list');
+
+    //append to the DOM
+    container.appendChild(containerList);
+
+    // IIFE (Immediately Invoked Function Expression) for the 'new' department
+    const novoLink = (() => {
+      // create elements
+      const novaBox = document.createElement('div'); // div to hold department icon and title
+      const boxImage = new Image(); // department image
+      const boxSpan = document.createElement('span'); // span to hold department title
+
+      // set attributes, classes, and images
+      novaBox.classList.add('drop-box');
+      novaBox.setAttribute('id', 'new-in');
+      boxImage.src = Box;
+      boxImage.classList.add('drop-icon');
+      boxImage.setAttribute('alt', 'Novo icon');
+      boxSpan.textContent = 'Novo';
+
+      // append to the DOM
+      containerList.appendChild(novaBox);
+      novaBox.appendChild(boxImage);
+      novaBox.appendChild(boxSpan);
+    })();
+
+    // IIFE (Immediately Invoked Function Expression) for the 'sofa' department
+    const sofaLink = (() => {
+      // create elements
+      const sofaBox = document.createElement('div'); // div to hold department icon and title
+      const sofaImage = new Image(); // sofa department icon
+      const sofaSpan = document.createElement('span'); // span for department title
+
+      // set attributes, classes, and images
+      sofaBox.classList.add('drop-box');
+      sofaBox.setAttribute('id', 'sofas');
+      sofaImage.src = Sofa;
+      sofaImage.classList.add('drop-icon');
+      sofaImage.setAttribute('alt', 'Sofa icon');
+      sofaSpan.textContent = 'Sofás';
+
+      // append to the DOM
+      containerList.append(sofaBox);
+      sofaBox.appendChild(sofaImage);
+      sofaBox.appendChild(sofaSpan);
+    })();
+
+    // IIFE (Immediately Invoked Function Expression) for the 'chair' department
+    const chairLink = (() => {
+      // create elements
+      const chairBox = document.createElement('div');
+      const chairImage = new Image();
+      const chairSpan = document.createElement('span');
+
+      // set attributes, classes, and images
+      chairBox.classList.add('drop-box');
+      chairBox.setAttribute('id', 'chairs');
+      chairImage.src = Chair;
+      chairImage.classList.add('drop-icon');
+      chairImage.setAttribute(
+        'alt',
+        'chair icon which links to chair department'
+      );
+      chairSpan.textContent = 'Cadeiras';
+
+      // append to the DOM
+      containerList.append(chairBox);
+      chairBox.appendChild(chairImage);
+      chairBox.appendChild(chairSpan);
+    })();
+
+    // IIFE (Immediately Invoked Function Expression) for the 'favourite' department
+    const favLink = (() => {
+
+      // create elements
+      const favBox = document.createElement('div');
+      const favImage = new Image();
+      const favSpan = document.createElement('span');
+
+      // set attributes, classes, and images
+      favBox.classList.add('drop-box');
+      favBox.setAttribute('id', 'favs');
+      favImage.src = Fav;
+      favImage.classList.add('drop-icon');
+      favImage.setAttribute('alt', 'Mesa icon');
+      favImage.setAttribute('id', 'heart');
+      favSpan.textContent = 'Favoritos';
+
+      // append to the DOM
+      containerList.append(favBox);
+      favBox.appendChild(favImage);
+      favBox.appendChild(favSpan);
+    })();
+
+    return container;
+  };
+  contentDiv.appendChild(createCategoryBar());
 }
 
 // export default compileWebsite;

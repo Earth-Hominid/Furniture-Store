@@ -16,18 +16,18 @@ function createHeroPromo() {
     const section = document.createElement('section');
     const hero = document.createElement('div');
     const promoSection = document.createElement('div');
-    
+
     // set attributes, classes and images
     section.classList.add('hero-section');
     section.setAttribute('id', 'toggle');
     hero.classList.add('hero');
     promoSection.classList.add('promotion-section');
-    
+
     // append to the DOM
     section.appendChild(hero);
     hero.appendChild(promoSection);
 
-    //IIFE for left side hero content
+    // IIFE for left side hero content
     const leftSquare = (() => {
       // create elements
       const promoLeft = document.createElement('div');
@@ -55,7 +55,7 @@ function createHeroPromo() {
       promoLeft.appendChild(leftPromoImage);
     })();
 
-    //IIFE for middle hero content
+    // IIFE for middle hero content
     const promoMiddleSquare = (() => {
       // create elements
       const promoMiddle = document.createElement('div');
@@ -71,7 +71,7 @@ function createHeroPromo() {
       promoMiddle.appendChild(heroPromo);
     })();
 
-    //IIFE for right side hero content
+    // IIFE for right side hero content
     const rightSquare = (() => {
       // create elements
       const promoRight = document.createElement('div');
@@ -153,8 +153,8 @@ function createShowcase() {
       carousel.appendChild(productContainer);
       productContainer.appendChild(leftSquare);
       leftSquare.appendChild(leftSquareImage);
-      leftSquare.appendChild(leftSquareProductName);
-      leftSquare.appendChild(leftSquarePrice);
+      productContainer.appendChild(leftSquareProductName);
+      productContainer.appendChild(leftSquarePrice);
     })();
 
     const createSecondProductSquare = (() => {
@@ -180,12 +180,12 @@ function createShowcase() {
       carousel.appendChild(productContainer);
       productContainer.appendChild(secondSquare);
       secondSquare.appendChild(secondImage);
-      secondSquare.appendChild(secondSquareProductName);
-      secondSquare.appendChild(secondSquarePrice);
+      productContainer.appendChild(secondSquareProductName);
+      productContainer.appendChild(secondSquarePrice);
     })();
 
     const createthirdProductSquare = (() => {
-      //Create Elements
+      // Create Elements
       const productContainer = document.createElement('div');
       const thirdSquare = document.createElement('div');
       const thirdImage = new Image();
@@ -207,8 +207,8 @@ function createShowcase() {
       carousel.appendChild(productContainer);
       productContainer.appendChild(thirdSquare);
       thirdSquare.appendChild(thirdImage);
-      thirdSquare.appendChild(thirdSquareProductName);
-      thirdSquare.appendChild(thirdSquarePrice);
+      productContainer.appendChild(thirdSquareProductName);
+      productContainer.appendChild(thirdSquarePrice);
     })();
 
     const createfourthProductSquare = (() => {
@@ -234,8 +234,8 @@ function createShowcase() {
       carousel.appendChild(productContainer);
       productContainer.appendChild(fourthSquare);
       fourthSquare.appendChild(fourthImage);
-      fourthSquare.appendChild(fourthSquareProductName);
-      fourthSquare.appendChild(fourthSquarePrice);
+      productContainer.appendChild(fourthSquareProductName);
+      productContainer.appendChild(fourthSquarePrice);
     })();
 
     return showcaseSection;

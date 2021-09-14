@@ -37,8 +37,8 @@ This project is licensed under the [MIT] License - see the LICENSE.md file for d
 
 ## Acknowledgments
 
-[The Odin Project](https://www.theodinproject.com)
-[Adobe XD Altura UI Kit](https://www.adobe.com/ca/products/xd/features/ui-kits.html)
-[Webpack](https://webpack.js.org/)
-[ESLint](https://eslint.org/)
-[Airbnb Style Guide](https://github.com/airbnb/javascript)
+* [The Odin Project](https://www.theodinproject.com)
+* [Adobe XD Altura UI Kit](https://www.adobe.com/ca/products/xd/features/ui-kits.html)
+* [Webpack](https://webpack.js.org/)
+* [ESLint](https://eslint.org/)
+* [Airbnb Style Guide](https://github.com/airbnb/javascript)

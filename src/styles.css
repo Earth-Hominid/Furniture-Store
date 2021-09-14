@@ -352,16 +352,15 @@ nav {
 
 .display {
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 78.8177vh;
   width: auto;
   margin-left: 5.0427vw;
+  margin-top: 6vh;
 }
 
 #office {
-  height: 78.8177vh;
-  width: 70.427vw;
+  height: 60.8365vh;
+  width: 57.2222vw;
 }
 
 .left-copy-div {

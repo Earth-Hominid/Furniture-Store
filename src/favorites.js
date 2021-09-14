@@ -147,7 +147,6 @@ function favorite() {
     // Create Section
     const section = document.createElement('section');
     section.classList.add('section-display');
-    document.body.append(section);
 
     // Create div to hold hero details
     const display = document.createElement('div');
@@ -182,7 +181,7 @@ function favorite() {
     rightImage.setAttribute('id', 'office');
     rightHero.appendChild(rightImage);
 
-    return favsHeroSection;
+    return section;
   };
 
   mainSection.append(favsHeroSection());

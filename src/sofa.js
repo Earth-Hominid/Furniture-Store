@@ -200,7 +200,7 @@ function sofa() {
     showcase.appendChild(showcaseHeadline);
 
     const carousel = document.createElement('div');
-    carousel.classList.add('showcase-carousel');
+    carousel.classList.add('showcase-carousel-image');
     showcaseSection.appendChild(carousel);
 
     const createleftSquareProduct = (() => {
@@ -256,15 +256,11 @@ function sofa() {
     })();
 
     const createthirdProductSquare = (() => {
-      const productContainer = document.createElement('div');
-      productContainer.classList.add('product-container');
-      carousel.appendChild(productContainer);
-
       const thirdImage = new Image();
       thirdImage.src = LivingRoom;
       thirdImage.setAttribute('alt', 'sala de estar');
       thirdImage.classList.add('showcase-rectangle');
-      productContainer.appendChild(thirdImage);
+      carousel.appendChild(thirdImage);
     })();
 
     return showcaseSection;

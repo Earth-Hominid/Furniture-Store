@@ -197,16 +197,21 @@ nav {
 }
 
 .showcase-carousel {
-  height: 58.45648vh;
   width: auto;
-  margin-left: 2.0797vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.showcase-carousel-image {
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
 .product-container {
-  height: 45.1204vh;
+  margin-top: 5.0697vh;
   width: 20.88068vw;
 }
 

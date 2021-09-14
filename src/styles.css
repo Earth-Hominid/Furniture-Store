@@ -410,6 +410,7 @@ nav {
   justify-content: center;
   width: auto;
   margin-left: 5.0427vw;
+  margin-right: 5.0427vw;
   margin-top: 8vh;
 }
 
@@ -426,4 +427,10 @@ nav {
   margin-right: 2.7777vw;
   margin-top: 3.0418vh;
   margin-bottom: 5.3231vh;
+}
+
+#bottom-image {
+  margin-top: 5.0697vh;
+  max-height: 560px;
+  width: 100%;
 }

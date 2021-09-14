@@ -190,7 +190,7 @@ function favorite() {
     const leftImage = new Image(); // Create hero image
 
     // set attributes, classes, text and images
-    section.classList.add('section-leftImageDisplayy');
+    section.classList.add('section-leftImageDisplay');
     leftImageDisplay.classList.add('leftImageDisplay');
     rightSideCopyWrite.classList.add('right-copy-div');
     rightSideCopyWriteTitle.classList.add('right-copy-title');
@@ -213,6 +213,24 @@ function favorite() {
     return section;
   };
   mainSection.append(imageOnLeftSideSection());
+
+  const bottomImageSection = () => {
+    // Create Elements
+    const section = document.createElement('section'); // Create section
+    const bottomImage = new Image(); // Create bottom image
+
+    // Set attributes, class and image
+    section.classList.add('section-bottomImage');
+    bottomImage.src = Kitchen;
+    bottomImage.setAttribute('alt', 'cozinha');
+    bottomImage.setAttribute('id', 'bottom-image');
+
+    // Append to the DOM
+    section.appendChild(bottomImage);
+
+    return section;
+  };
+  mainSection.append(bottomImageSection());
 }
 
 export default favorite;

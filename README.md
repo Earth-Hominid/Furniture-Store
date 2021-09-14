@@ -31,11 +31,6 @@ Pixels have been converted into the viewport metrics. The Adobe XD UI Kit, Altur
 * ESLint + Airbnb JavaScript Style Guide
 * Webpack
 
-## Author
-
-Earth Hominid  
-[GitHub](https://github.com/Earth-Hominid)
-
 ## License
 
 This project is licensed under the [MIT] License - see the LICENSE.md file for details

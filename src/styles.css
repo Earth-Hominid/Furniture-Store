@@ -252,6 +252,7 @@ nav {
   padding-top: 1vh;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 1.0139vh;
   display: block;
 }
 
@@ -355,7 +356,7 @@ nav {
   justify-content: center;
   width: auto;
   margin-left: 5.0427vw;
-  margin-top: 6vh;
+  margin-top: 8vh;
 }
 
 #office {
@@ -364,8 +365,9 @@ nav {
 }
 
 .left-copy-div {
-  width: 27.3504vw;
-  height: 4.5977vh;
+  width: 27.894vw;
+  height: 28.897vh;
+  margin-right: 1.6736vw;
 }
 
 .left-copywrite-title {
@@ -374,6 +376,8 @@ nav {
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
+  margin-top: 6.4638vh;
+  margin-bottom: 3.0418vh;
 }
 
 .left-copywrite-paragraph {
@@ -382,4 +386,7 @@ nav {
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
+  margin-right: 2.7894vw;
+  margin-top: 3.0418vh;
+  margin-bottom: 5.3231vh;
 }

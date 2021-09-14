@@ -8,31 +8,29 @@ function favorite() {
   const mainSection = document.getElementById('main');
 
   const createTopShowcase = () => {
-    // Create Section
+    // Create elements
     const showcaseSection = document.createElement('section');
-    showcaseSection.classList.add('showcase-section');
-    document.body.append(showcaseSection);
-
-    // Create div to hold hero details
     const heroDepartment = document.createElement('div');
-    heroDepartment.classList.add('hero-department');
-    showcaseSection.appendChild(heroDepartment);
-    // Create div to hold navigation headline
     const departmentHeadline = document.createElement('div');
+    const showcase = document.createElement('div');
+    const showcaseHeadline = document.createElement('div');
+    const carousel = document.createElement('div');
+
+    // set attributes, images and classes
+    showcaseSection.classList.add('showcase-section');
+    heroDepartment.classList.add('hero-department');
     departmentHeadline.classList.add('department-headline');
     departmentHeadline.textContent = 'Homepage > Favoritos';
-    heroDepartment.appendChild(departmentHeadline);
-
-    const showcase = document.createElement('div');
     showcase.classList.add('product-showcase');
-    showcaseSection.appendChild(showcase);
-
-    const showcaseHeadline = document.createElement('div');
     showcaseHeadline.classList.add('div-headline');
-    showcase.appendChild(showcaseHeadline);
-
-    const carousel = document.createElement('div');
     carousel.classList.add('showcase-carousel');
+
+    // Append to DOM
+    document.body.append(showcaseSection);
+    showcaseSection.appendChild(heroDepartment);
+    heroDepartment.appendChild(departmentHeadline);
+    showcaseSection.appendChild(showcase);
+    showcase.appendChild(showcaseHeadline);
     showcaseSection.appendChild(carousel);
 
     const createleftSquareProduct = (() => {
@@ -144,41 +142,34 @@ function favorite() {
   mainSection.append(createTopShowcase());
 
   const favsHeroSection = () => {
-    // Create Section
-    const section = document.createElement('section');
+    // Create elements
+    const section = document.createElement('section'); // Create section
+    const display = document.createElement('div'); // Create div to hold hero details
+    const copywrite = document.createElement('div'); // Create copy div for left-side of page
+    const copywriteTitle = document.createElement('h1'); // Copywrite heading
+    const copywriteParagraph = document.createElement('p'); // Copywrite paragraph
+    const rightHero = document.createElement('div'); // Create div for image, right-side of page
+    const rightImage = new Image(); // Create hero image
+
+    // set attributes, classes, text and images
     section.classList.add('section-display');
-
-    // Create div to hold hero details
-    const display = document.createElement('div');
     display.classList.add('display');
-    section.appendChild(display);
-
-    // Create copy div for left-side of page
-    const copywrite = document.createElement('div');
     copywrite.classList.add('left-copy-div');
-    display.appendChild(copywrite);
-
-    // Copywrite heading
-    const copywriteTitle = document.createElement('h1');
     copywriteTitle.classList.add('left-copywrite-title');
     copywriteTitle.textContent = 'Escritório em casa';
-    copywrite.appendChild(copywriteTitle);
-
-    // Copywrite paragraph
-    const copywriteParagraph = document.createElement('p');
     copywriteParagraph.classList.add('left-copywrite-paragraph');
     copywriteParagraph.textContent = 'Pode ser um trabalho, mas não precisa parecer assim. Tudo o que é necessário é um mobiliário de escritório doméstico ergonômico, mas confortável e elegante para manter as coisas organizadas e a iluminação certa para o trabalho.';
-    copywrite.appendChild(copywriteParagraph);
-
-    // Create div for image, right-side of page
-    const rightHero = document.createElement('div');
     rightHero.classList.add('department-hero-right');
-    display.appendChild(rightHero);
-    // Create hero image
-    const rightImage = new Image();
     rightImage.src = Office;
     rightImage.setAttribute('alt', 'escritório em casa');
     rightImage.setAttribute('id', 'office');
+
+    // append to the DOM
+    section.appendChild(display);
+    display.appendChild(copywrite);
+    copywrite.appendChild(copywriteTitle);
+    copywrite.appendChild(copywriteParagraph);
+    display.appendChild(rightHero);
     rightHero.appendChild(rightImage);
 
     return section;

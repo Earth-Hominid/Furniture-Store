@@ -38,8 +38,7 @@ function sofa() {
     copywriteTitle.classList.add('copywrite-title');
     copywriteTitle.textContent = 'Sofás';
     copywriteParagraph.classList.add('copywrite-paragraph');
-    copywriteParagraph.textContent =
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium provident non soluta optio, dignissimos similique reprehenderit porro veniam nemo error voluptas esse asperiores quae molestias! Similique quos optio ut.';
+    copywriteParagraph.textContent = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium provident non soluta optio, dignissimos similique reprehenderit porro veniam nemo error voluptas esse asperiores quae molestias! Similique quos optio ut.';
 
     // Append to the DOM
     heroSection.appendChild(heroDepartment);
@@ -97,12 +96,11 @@ function sofa() {
       carousel.appendChild(productContainer);
       productContainer.appendChild(leftSquare);
       leftSquare.appendChild(leftSquareImage);
-      leftSquare.appendChild(leftSquareProductName);
-      leftSquare.appendChild(leftSquarePrice);
+      productContainer.appendChild(leftSquareProductName);
+      productContainer.appendChild(leftSquarePrice);
     })();
     // IIFE for the second product
     const createSecondProductSquare = (() => {
-
       // Create elements
       const productContainer = document.createElement('div');
       const secondSquare = document.createElement('div');
@@ -121,16 +119,15 @@ function sofa() {
       secondSquarePrice.classList.add('showcase-product-price');
       secondSquarePrice.textContent = 'BRL 2000';
 
-      // Append to the DOM 
+      // Append to the DOM
       carousel.appendChild(productContainer);
       productContainer.appendChild(secondSquare);
       secondSquare.appendChild(secondImage);
-      secondSquare.appendChild(secondSquareProductName);
-      secondSquare.appendChild(secondSquarePrice);
+      productContainer.appendChild(secondSquareProductName);
+      productContainer.appendChild(secondSquarePrice);
     })();
     // IIFE for the third product
     const createthirdProductSquare = (() => {
-
       // create elements
       const productContainer = document.createElement('div');
       const thirdSquare = document.createElement('div');
@@ -149,16 +146,15 @@ function sofa() {
       thirdSquarePrice.classList.add('showcase-product-price');
       thirdSquarePrice.textContent = 'BRL 2000';
 
-      // append to DOM 
+      // append to DOM
       carousel.appendChild(productContainer);
       productContainer.appendChild(thirdSquare);
       thirdSquare.appendChild(thirdImage);
-      thirdSquare.appendChild(thirdSquareProductName);
-      thirdSquare.appendChild(thirdSquarePrice);
+      productContainer.appendChild(thirdSquareProductName);
+      productContainer.appendChild(thirdSquarePrice);
     })();
     // IIFE for the fourth product
     const createfourthProductSquare = (() => {
-
       // create elements
       const productContainer = document.createElement('div');
       const fourthSquare = document.createElement('div');
@@ -181,8 +177,8 @@ function sofa() {
       carousel.appendChild(productContainer);
       productContainer.appendChild(fourthSquare);
       fourthSquare.appendChild(fourthImage);
-      fourthSquare.appendChild(fourthSquareProductName);
-      fourthSquare.appendChild(fourthSquarePrice);
+      productContainer.appendChild(fourthSquareProductName);
+      productContainer.appendChild(fourthSquarePrice);
     })();
 
     return showcaseSection;
@@ -225,12 +221,12 @@ function sofa() {
       const leftSquareProductName = document.createElement('div');
       leftSquareProductName.classList.add('showcase-product-name');
       leftSquareProductName.textContent = 'Betty';
-      leftSquare.appendChild(leftSquareProductName);
+      productContainer.appendChild(leftSquareProductName);
 
       const leftSquarePrice = document.createElement('div');
       leftSquarePrice.classList.add('showcase-product-price');
       leftSquarePrice.textContent = 'BRL 2000';
-      leftSquare.appendChild(leftSquarePrice);
+      productContainer.appendChild(leftSquarePrice);
     })();
 
     const createSecondProductSquare = (() => {
@@ -251,12 +247,12 @@ function sofa() {
       const secondSquareProductName = document.createElement('div');
       secondSquareProductName.classList.add('showcase-product-name');
       secondSquareProductName.textContent = 'Betty';
-      secondSquare.appendChild(secondSquareProductName);
+      productContainer.appendChild(secondSquareProductName);
 
       const secondSquarePrice = document.createElement('div');
       secondSquarePrice.classList.add('showcase-product-price');
       secondSquarePrice.textContent = 'BRL 2000';
-      secondSquare.appendChild(secondSquarePrice);
+      productContainer.appendChild(secondSquarePrice);
     })();
 
     const createthirdProductSquare = (() => {
@@ -311,12 +307,12 @@ function sofa() {
       const leftSquareProductName = document.createElement('div');
       leftSquareProductName.classList.add('showcase-product-name');
       leftSquareProductName.textContent = 'Betty';
-      leftSquare.appendChild(leftSquareProductName);
+      productContainer.appendChild(leftSquareProductName);
 
       const leftSquarePrice = document.createElement('div');
       leftSquarePrice.classList.add('showcase-product-price');
       leftSquarePrice.textContent = 'BRL 2000';
-      leftSquare.appendChild(leftSquarePrice);
+      productContainer.appendChild(leftSquarePrice);
     })();
 
     const createSecondProductSquare = (() => {
@@ -337,12 +333,12 @@ function sofa() {
       const secondSquareProductName = document.createElement('div');
       secondSquareProductName.classList.add('showcase-product-name');
       secondSquareProductName.textContent = 'Betty';
-      secondSquare.appendChild(secondSquareProductName);
+      productContainer.appendChild(secondSquareProductName);
 
       const secondSquarePrice = document.createElement('div');
       secondSquarePrice.classList.add('showcase-product-price');
       secondSquarePrice.textContent = 'BRL 2000';
-      secondSquare.appendChild(secondSquarePrice);
+      productContainer.appendChild(secondSquarePrice);
     })();
 
     const createthirdProductSquare = (() => {
@@ -363,12 +359,12 @@ function sofa() {
       const thirdSquareProductName = document.createElement('div');
       thirdSquareProductName.classList.add('showcase-product-name');
       thirdSquareProductName.textContent = 'Betty';
-      thirdSquare.appendChild(thirdSquareProductName);
+      productContainer.appendChild(thirdSquareProductName);
 
       const thirdSquarePrice = document.createElement('div');
       thirdSquarePrice.classList.add('showcase-product-price');
       thirdSquarePrice.textContent = 'BRL 2000';
-      thirdSquare.appendChild(thirdSquarePrice);
+      productContainer.appendChild(thirdSquarePrice);
     })();
 
     const createfourthProductSquare = (() => {
@@ -389,12 +385,12 @@ function sofa() {
       const fourthSquareProductName = document.createElement('div');
       fourthSquareProductName.classList.add('showcase-product-name');
       fourthSquareProductName.textContent = 'Betty';
-      fourthSquare.appendChild(fourthSquareProductName);
+      productContainer.appendChild(fourthSquareProductName);
 
       const fourthSquarePrice = document.createElement('div');
       fourthSquarePrice.classList.add('showcase-product-price');
       fourthSquarePrice.textContent = 'BRL 2000';
-      fourthSquare.appendChild(fourthSquarePrice);
+      productContainer.appendChild(fourthSquarePrice);
     })();
 
     return showcaseSection;

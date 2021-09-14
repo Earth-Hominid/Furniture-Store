@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -37,7 +39,7 @@ nav {
   height: 24px;
   width: 20px;
   margin: 1.25rem;
-} 
+}
 
 #bag {
   height: 24px;
@@ -55,7 +57,7 @@ nav {
 .container-category {
   height: 15.753vh;
   width: auto;
-  background-color: #FFE0C3;
+  background-color: #ffe0c3;
   z-index: 10;
   position: relative;
   display: flex;
@@ -91,7 +93,7 @@ nav {
   display: flex;
   align-items: center;
   height: 54.7945vh;
-  background-color: #FFF7F0;
+  background-color: #fff7f0;
   justify-content: center;
 }
 
@@ -109,8 +111,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FFF7F0 0% 0% no-repeat padding-box;
-  border: 3px solid #FF7B54;
+  background: #fff7f0 0% 0% no-repeat padding-box;
+  border: 3px solid #ff7b54;
   opacity: 1;
   width: 31.397vw;
   height: 27.397vh;
@@ -118,12 +120,12 @@ nav {
 
 #left-promo-img {
   height: 41.0958vh;
-  width: 16.640vw;
+  width: 16.64vw;
 }
 
 #right-promo-img {
   height: 41.0958vh;
-  width: 16.640vw;
+  width: 16.64vw;
   overflow: hidden;
 }
 
@@ -142,7 +144,7 @@ nav {
 }
 
 .promo-left-square {
-  background-color: #FFE0C3;
+  background-color: #ffe0c3;
   opacity: 1;
   height: 41.0958vh;
   width: 31.397vw;
@@ -177,7 +179,7 @@ nav {
 }
 
 .promo-right-square {
-  background-color: #FFE0C3;
+  background-color: #ffe0c3;
   opacity: 1;
   height: 41.0958vh;
   width: 31.397vw;
@@ -218,13 +220,13 @@ nav {
 .product-square-left {
   height: 37.2623vh;
   width: 21.0903vw;
-  background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
 .product-square {
   height: 37.2623vh;
   width: 21.0903vw;
-  background-color: #EFEFEF;
+  background-color: #efefef;
 }
 
 .showcase-image {
@@ -312,7 +314,7 @@ nav {
 
 #living-room {
   height: 40.5576vh;
-  min-width: 36.9080vw;
+  min-width: 36.908vw;
   padding-top: 3.554vh;
   margin-left: 4.649vw;
 }
@@ -344,8 +346,8 @@ nav {
   height: 37.2623vh;
   width: 43.4659vw;
   opacity: 1;
-  padding-right: .5vw;
-  padding-left: .5vw;
+  padding-right: 0.5vw;
+  padding-left: 0.5vw;
 }
 
 .display {

@@ -8,7 +8,7 @@ import ProductTwo from './images/product/Image-Product.png';
 // Function which creates the hero section below the department link bar
 function createHeroPromo() {
   // Create an element to grab the content div in index.html
-  const contentDiv = document.getElementById('content');
+  const mainSection = document.getElementById('main');
 
   // IIFE for hero section
   const heroSection = () => {
@@ -16,14 +16,15 @@ function createHeroPromo() {
     const section = document.createElement('section');
     const hero = document.createElement('div');
     const promoSection = document.createElement('div');
-
+    
     // set attributes, classes and images
     section.classList.add('hero-section');
     section.setAttribute('id', 'toggle');
     hero.classList.add('hero');
     promoSection.classList.add('promotion-section');
-
+    
     // append to the DOM
+    section.appendChild(hero);
     hero.appendChild(promoSection);
 
     //IIFE for left side hero content
@@ -100,7 +101,7 @@ function createHeroPromo() {
 
     return section;
   };
-  contentDiv.appendChild(heroSection());
+  mainSection.appendChild(heroSection());
 }
 
 function createShowcase() {

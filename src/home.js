@@ -7,7 +7,7 @@ import Sofa from './images/icons/sofa32.png';
 import Chair from './images/icons/chair32.png';
 import Fav from './images/icons/heart1.png';
 import BackToTopArrow from './images/icons/icon-arrow.png';
-import createNew from './new.js';
+import createNew from './new';
 
 // Function which creates the very top navigation bar.
 function createNavBar() {
@@ -26,7 +26,7 @@ function createNavBar() {
     const bagDiv = document.createElement('div'); // a div to hold shopping bag icon
     const bagIcon = new Image(); // shopping bag icon
 
-    //set attributes, images, and classes
+    // set attributes, images, and classes
     nav.setAttribute('id', 'nav');
     logo.src = Logo;
     logo.setAttribute('id', 'logo');
@@ -48,7 +48,7 @@ function createNavBar() {
     bagIcon.setAttribute('alt', 'bag icon which goes to shopping cart');
     bagIcon.setAttribute('id', 'bag');
 
-    //append to the DOM
+    // append to the DOM
     nav.appendChild(logo);
     nav.appendChild(navBar);
     navBar.appendChild(navIcon);
@@ -75,12 +75,12 @@ function createDepartmentNav() {
     // Div to hold category/department icons
     const containerList = document.createElement('div');
 
-    //set attributes & classes
+    // set attributes & classes
     container.classList.add('container-category');
     containerList.classList.add('category-list');
     containerList.setAttribute('id', 'link-list');
 
-    //append to the DOM
+    // append to the DOM
     container.appendChild(containerList);
 
     // IIFE (Immediately Invoked Function Expression) for the 'new' department
@@ -139,7 +139,7 @@ function createDepartmentNav() {
       chairImage.classList.add('drop-icon');
       chairImage.setAttribute(
         'alt',
-        'chair icon which links to chair department'
+        'chair icon which links to chair department',
       );
       chairSpan.textContent = 'Cadeiras';
 
@@ -180,7 +180,7 @@ function createDepartmentNav() {
 function createMain() {
   const contentDiv = document.getElementById('content');
 
-  //IIFE for the main section
+  // IIFE for the main section
   const createMainArea = () => {
     const main = document.createElement('main');
     main.classList.add('main');
@@ -195,7 +195,7 @@ function createFooter() {
   const contentDiv = document.getElementById('content');
 
   const createFooterSection = () => {
-    //Create Elements
+    // Create Elements
     const footerSection = document.createElement('section'); // Create Section
     const footer = document.createElement('div'); // Create footer div
     // Create additonal footer div to hold icon & text

@@ -9,7 +9,6 @@ import GreyChair from './images/chairs/cadeira-cinza.png';
 import OfficeOne from './images/chairs/office1.png';
 import OfficeChair from './images/chairs/comp-chair.png';
 
-
 function chair() {
   const mainSection = document.getElementById('main');
 

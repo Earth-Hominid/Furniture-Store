@@ -143,7 +143,7 @@ function favorite() {
   };
   mainSection.append(createTopShowcase());
 
-const favsHeroSection = () => {
+  const favsHeroSection = () => {
     // Create Section
     const section = document.createElement('section');
     section.classList.add('section-display');

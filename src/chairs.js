@@ -89,12 +89,12 @@ function chair() {
       const leftSquareProductName = document.createElement('div');
       leftSquareProductName.classList.add('showcase-product-name');
       leftSquareProductName.textContent = 'Betty';
-      leftSquare.appendChild(leftSquareProductName);
+      productContainer.appendChild(leftSquareProductName);
 
       const leftSquarePrice = document.createElement('div');
       leftSquarePrice.classList.add('showcase-product-price');
       leftSquarePrice.textContent = 'BRL 2000';
-      leftSquare.appendChild(leftSquarePrice);
+      productContainer.appendChild(leftSquarePrice);
     })();
 
     const createSecondProductSquare = (() => {
@@ -115,12 +115,12 @@ function chair() {
       const secondSquareProductName = document.createElement('div');
       secondSquareProductName.classList.add('showcase-product-name');
       secondSquareProductName.textContent = 'Betty';
-      secondSquare.appendChild(secondSquareProductName);
+      productContainer.appendChild(secondSquareProductName);
 
       const secondSquarePrice = document.createElement('div');
       secondSquarePrice.classList.add('showcase-product-price');
       secondSquarePrice.textContent = 'BRL 2000';
-      secondSquare.appendChild(secondSquarePrice);
+      productContainer.appendChild(secondSquarePrice);
     })();
 
     const createthirdProductSquare = (() => {
@@ -141,12 +141,12 @@ function chair() {
       const thirdSquareProductName = document.createElement('div');
       thirdSquareProductName.classList.add('showcase-product-name');
       thirdSquareProductName.textContent = 'Betty';
-      thirdSquare.appendChild(thirdSquareProductName);
+      productContainer.appendChild(thirdSquareProductName);
 
       const thirdSquarePrice = document.createElement('div');
       thirdSquarePrice.classList.add('showcase-product-price');
       thirdSquarePrice.textContent = 'BRL 2000';
-      thirdSquare.appendChild(thirdSquarePrice);
+      productContainer.appendChild(thirdSquarePrice);
     })();
 
     const createfourthProductSquare = (() => {
@@ -167,12 +167,12 @@ function chair() {
       const fourthSquareProductName = document.createElement('div');
       fourthSquareProductName.classList.add('showcase-product-name');
       fourthSquareProductName.textContent = 'Betty';
-      fourthSquare.appendChild(fourthSquareProductName);
+      productContainer.appendChild(fourthSquareProductName);
 
       const fourthSquarePrice = document.createElement('div');
       fourthSquarePrice.classList.add('showcase-product-price');
       fourthSquarePrice.textContent = 'BRL 2000';
-      fourthSquare.appendChild(fourthSquarePrice);
+      productContainer.appendChild(fourthSquarePrice);
     })();
 
     return showcaseSection;
@@ -215,12 +215,12 @@ function chair() {
       const leftSquareProductName = document.createElement('div');
       leftSquareProductName.classList.add('showcase-product-name');
       leftSquareProductName.textContent = 'Betty';
-      leftSquare.appendChild(leftSquareProductName);
+      productContainer.appendChild(leftSquareProductName);
 
       const leftSquarePrice = document.createElement('div');
       leftSquarePrice.classList.add('showcase-product-price');
       leftSquarePrice.textContent = 'BRL 2000';
-      leftSquare.appendChild(leftSquarePrice);
+      productContainer.appendChild(leftSquarePrice);
     })();
 
     const createSecondProductSquare = (() => {
@@ -241,24 +241,20 @@ function chair() {
       const secondSquareProductName = document.createElement('div');
       secondSquareProductName.classList.add('showcase-product-name');
       secondSquareProductName.textContent = 'Betty';
-      secondSquare.appendChild(secondSquareProductName);
+      productContainer.appendChild(secondSquareProductName);
 
       const secondSquarePrice = document.createElement('div');
       secondSquarePrice.classList.add('showcase-product-price');
       secondSquarePrice.textContent = 'BRL 2000';
-      secondSquare.appendChild(secondSquarePrice);
+      productContainer.appendChild(secondSquarePrice);
     })();
 
     const createthirdProductSquare = (() => {
-      const productContainer = document.createElement('div');
-      productContainer.classList.add('product-container');
-      carousel.appendChild(productContainer);
-
       const thirdImage = new Image();
       thirdImage.src = OfficeOne;
       thirdImage.setAttribute('alt', 'office');
       thirdImage.classList.add('showcase-rectangle');
-      productContainer.appendChild(thirdImage);
+      carousel.appendChild(thirdImage);
     })();
 
     return showcaseSection;
@@ -301,12 +297,12 @@ function chair() {
       const leftSquareProductName = document.createElement('div');
       leftSquareProductName.classList.add('showcase-product-name');
       leftSquareProductName.textContent = 'Betty';
-      leftSquare.appendChild(leftSquareProductName);
+      productContainer.appendChild(leftSquareProductName);
 
       const leftSquarePrice = document.createElement('div');
       leftSquarePrice.classList.add('showcase-product-price');
       leftSquarePrice.textContent = 'BRL 2000';
-      leftSquare.appendChild(leftSquarePrice);
+      productContainer.appendChild(leftSquarePrice);
     })();
 
     const createSecondProductSquare = (() => {
@@ -327,12 +323,12 @@ function chair() {
       const secondSquareProductName = document.createElement('div');
       secondSquareProductName.classList.add('showcase-product-name');
       secondSquareProductName.textContent = 'Betty';
-      secondSquare.appendChild(secondSquareProductName);
+      productContainer.appendChild(secondSquareProductName);
 
       const secondSquarePrice = document.createElement('div');
       secondSquarePrice.classList.add('showcase-product-price');
       secondSquarePrice.textContent = 'BRL 2000';
-      secondSquare.appendChild(secondSquarePrice);
+      productContainer.appendChild(secondSquarePrice);
     })();
 
     const createthirdProductSquare = (() => {
@@ -353,12 +349,12 @@ function chair() {
       const thirdSquareProductName = document.createElement('div');
       thirdSquareProductName.classList.add('showcase-product-name');
       thirdSquareProductName.textContent = 'Betty';
-      thirdSquare.appendChild(thirdSquareProductName);
+      productContainer.appendChild(thirdSquareProductName);
 
       const thirdSquarePrice = document.createElement('div');
       thirdSquarePrice.classList.add('showcase-product-price');
       thirdSquarePrice.textContent = 'BRL 2000';
-      thirdSquare.appendChild(thirdSquarePrice);
+      productContainer.appendChild(thirdSquarePrice);
     })();
 
     const createfourthProductSquare = (() => {
@@ -379,12 +375,12 @@ function chair() {
       const fourthSquareProductName = document.createElement('div');
       fourthSquareProductName.classList.add('showcase-product-name');
       fourthSquareProductName.textContent = 'Betty';
-      fourthSquare.appendChild(fourthSquareProductName);
+      productContainer.appendChild(fourthSquareProductName);
 
       const fourthSquarePrice = document.createElement('div');
       fourthSquarePrice.classList.add('showcase-product-price');
       fourthSquarePrice.textContent = 'BRL 2000';
-      fourthSquare.appendChild(fourthSquarePrice);
+      productContainer.appendChild(fourthSquarePrice);
     })();
 
     return showcaseSection;

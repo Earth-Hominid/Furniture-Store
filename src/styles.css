@@ -355,7 +355,6 @@ nav {
   display: flex;
   justify-content: center;
   width: auto;
-  margin-left: 5.0427vw;
   margin-top: 8vh;
 }
 
@@ -387,6 +386,44 @@ nav {
   color: #000000;
   opacity: 1;
   margin-right: 2.7894vw;
+  margin-top: 3.0418vh;
+  margin-bottom: 5.3231vh;
+}
+
+#bedroom {
+  height: 60.8365vh;
+  max-width: 57.2222vw;
+}
+
+.right-copy-title {
+  text-align: left;
+  font: normal normal bold 22px/28px Muli;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin-top: 6.4638vh;
+  margin-bottom: 3.0418vh;
+}
+
+.leftImageDisplay {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  margin-left: 5.0427vw;
+  margin-top: 8vh;
+}
+
+.right-copy-div {
+  margin-left: 1.6666vw;
+}
+
+.right-copy-paragraph {
+  text-align: left;
+  font: normal normal normal 16px/21px Muli;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin-right: 2.7777vw;
   margin-top: 3.0418vh;
   margin-bottom: 5.3231vh;
 }

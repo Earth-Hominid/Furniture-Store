@@ -3,6 +3,8 @@ import BrownSofa from './images/sofas/sofa-4.png';
 import BlackSofa from './images/sofas/sofa-2.png';
 import LuxSofa from './images/sofas/sofa-5.png';
 import Office from './images/chairs/office.png';
+import Bedroom from './images/room/bedroom.png';
+import Kitchen from './images/room/kitchen.png';
 
 function favorite() {
   const mainSection = document.getElementById('main');
@@ -176,6 +178,41 @@ function favorite() {
   };
 
   mainSection.append(favsHeroSection());
+
+  const imageOnLeftSideSection = () => {
+    // Create elements
+    const section = document.createElement('section'); // Create section
+    const leftImageDisplay = document.createElement('div'); // Create div to hold hero details
+    const rightSideCopyWrite = document.createElement('div'); // Create copy div for left-side of page
+    const rightSideCopyWriteTitle = document.createElement('h1'); // Copywrite heading
+    const rightSideCopyWriteParagraph = document.createElement('p'); // Copywrite paragraph
+    const leftHeroDiv = document.createElement('div'); // Create div for image, left-side of page
+    const leftImage = new Image(); // Create hero image
+
+    // set attributes, classes, text and images
+    section.classList.add('section-leftImageDisplayy');
+    leftImageDisplay.classList.add('leftImageDisplay');
+    rightSideCopyWrite.classList.add('right-copy-div');
+    rightSideCopyWriteTitle.classList.add('right-copy-title');
+    rightSideCopyWriteTitle.textContent = 'Quarto';
+    rightSideCopyWriteParagraph.classList.add('right-copy-paragraph');
+    rightSideCopyWriteParagraph.textContent = 'Tudo que você precisa para um retiro de quarto. O armazenamento inteligente mantém você livre de bagunça, enquanto a iluminação do quarto e as roupas de cama selecionadas definem o clima.';
+    leftHeroDiv.classList.add('department-hero-left');
+    leftImage.src = Bedroom;
+    leftImage.setAttribute('alt', 'quarto');
+    leftImage.setAttribute('id', 'bedroom');
+
+    // append to the DOM
+    section.appendChild(leftImageDisplay);
+    leftImageDisplay.appendChild(leftHeroDiv);
+    leftHeroDiv.appendChild(leftImage);
+    leftImageDisplay.appendChild(rightSideCopyWrite);
+    rightSideCopyWrite.appendChild(rightSideCopyWriteTitle);
+    rightSideCopyWrite.appendChild(rightSideCopyWriteParagraph);
+
+    return section;
+  };
+  mainSection.append(imageOnLeftSideSection());
 }
 
 export default favorite;
